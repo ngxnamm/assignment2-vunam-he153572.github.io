@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<style>
+    h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .home {
+        margin-top: 45px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 40px;
+        display: flex;
+    }
+
+    .home .list {
+        padding: 2%;
+    }
+
+    #one {
+
+        float: right;
+        width: 32%;
+
+    }
+
+    #two {
+        width: 60%;
+        margin-left: 50px;
+    }
+
+    div.vertical-line {
+        width: 1px;
+        background-color: black;
+        height: 100%;
+        float: left;
+    }
+
+    .top_story {
+        margin-left: 160px;
+        margin-right: 200px;
+    }
+
+    #more {
+        display: none;
+    }
+
+    .top_list {
+        display: flex;
+        margin-left: 11%;
+        margin-right: 10%;
+        padding-top: 2%;
+    }
+
+    .top_list .left {
+        flex-basis: 50%;
+    }
+
+    .top_list .right {
+        flex-basis: 50%;
+    }
+
+    .read {
+        margin-top: 50px;
+        margin-left: 160px;
+        margin-right: 200px;
+    }
+
+    .content {
+        margin-top: 20px;
+        margin-left: 160px;
+        margin-right: 200px;
+    }
+
+    .content .list_content {
+        padding: 5px;
+        display: flex;
+    }
+
+    #content1 {
+        flex-basis: 30%;
+        margin-top: 12px;
+    }
+
+    #content2 {
+        flex-basis: 60%;
+        margin-right: 50px;
+        margin-left: 30px;
+    }
+
+    .more {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .final {
+        margin-top: 150px;
+        margin-left: 160px;
+        margin-right: 200px;
+        margin-bottom: 100px;
+        display: flex;
+    }
+
+    .final .final_one {
+        flex-basis: 50%;
+        margin-right: 30px;
+        margin-top: 15px;
+    }
+
+    .final .final_two {
+        flex-basis: 50%;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        float: left;
+        padding: 0 15px;
+    }
+
+    nav ul li a {
+        font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 25px;
+        text-decoration: none;
+        color: black;
+        margin-left: 30px;
+    }
+    .footer {
+        background-color: black;
+        padding: 20px;
+        display: flex;
+    }
+
+    .footer .footer_left {
+        flex-basis: 90%;
+        margin-top: 10px;
+    }
+    .footer .footer_right {
+        flex-basis: 10%;
+    }
+</style>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<body>
+
+    <div class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background: #ffffff;">
+            <div class="container-fluid">
+
+                <a class="nav-link" href="home.html" style="font-family: 'Italiana';
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center; margin-left: 20px;color: black;">Lifestyle</a>
+
+                <div class="collapse navbar-collapse" id="mynavbar" style="margin-left: 350px; text-align: center;">
+                    <ul class="navbar-nav me-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;;color: black;">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form style="border: 1px solid black; margin-top: 15px;">
+                        <input style="font-family: 'Gelasio';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;padding: 3px 0px 3px 0px ;text-align: center; width: 80px; float: right; margin-right: 30px; border: none;"  type="text" value="Search"> 
+                        <button type="submit" style="border: none; background-color: white; margin-left: 20px;"><i class="fa fa-search"></i></button>
+                      </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <hr width="100%" align="left" style="color: black;margin-top: 5px;" />
+
+
+
+
+    <div class="home">
+
+        <div class="list" id="two">
+            <img src="dogs-1.jpeg" width="720" height="398">
+            <h4 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 10px;"><br>RELATIONSHIPS - OCTOBER 21, 2022 - BY GRACE FARRIS</h4>
+            <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 36px;">
+                Have a Relaxing Weekend.
+                    
+            </h2>
+            <div style="font-family: 'Jaldi';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 27px;">
+                What are you up to this weekend? We are going to see a few art exhibits, including Maira Kalman and Alex Katz. (How cool does his work look in the Guggenheim? I’m excited to wander down the spiral ramp.) Hope you have a good one, and here are a few fun links from around the web…<br><br>
+
+Elisabeth Moss breaks down her movie and TV outfits. (Nostalgic for Peggy!)<br><br>
+How gorgeous and cozy is this sweater?<br><br>
+    
+
+
+            </div>
+        </div>
+
+
+        <div class="list" id="one" style="border-left: 1px solid black">
+            <img src="chrysta-bilton.webp" width="359" height="196">
+            <h4 style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 14px;
+            margin: 10px;"><br> RELATIONSHIPS - JULY 11, 2022 - BY JOANNA GODDARD
+</h4>
+            <h2 style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;">
+            “How I Found Out I Had 35 Siblings”
+            </h2>
+            <div style="font-family: 'Jaldi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 22px;">
+                While reading the gripping new memoir Normal Family: Truth, Love and How I Met My 35 Siblings by Chrysta Bilton, I challenge you not to feel every emotion course through your body.
+            </div>
+            <br>
+
+            <img src="IMG_6667-scaled-2-1.webp" width="359" height="186">
+            <h4 style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 14px;
+            margin: 10px;"><br>FOOD - OCTOBER 19, 2022 - BY JENNY ROSENSTRACH
+</h4>
+            <h2 style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;">
+                Heart Sablé Cookies
+
+
+            </h2>
+            <div style="font-family: 'Jaldi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 22px;">
+Right after I got married, twenty-five years ago, I bought Rose Levy Beranbaum’s seminal Cake Bible. It felt like one of those books that you should own if you were serious about food. Beranbaum is a legend in the baking world and has since authored a dozen award-winners
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    
+    <div class="top_story">
+        <a style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;color: black;">Top story</a>
+
+        <a href="blog.html" style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: black; 
+        float: right;
+        ">View All</a>
+        <hr width="100%" align="left" style="color: black;margin-top: 5px" />
+    </div>
+
+
+    <div class="top_list">
+        <div class="left">
+            <img src="a24-has-purchased-paul-mescal-cannes-drama-aftersun-for-the-us-and-canada-exclusive.jpeg" width="556" height="325">
+            <h4 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 10px;"><br> OCTOBER 18, 2022 - DESIGN - BY JOANNA GODDARD</h4>
+            <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px; display: block; width: 85%;">
+                A Big, Juicy Round Up of Fall Recommendations <span id="dots"></span><span
+                    id="more">This season, my two goals are:<br> 
+                    a) enjoy the unbearable cuteness of toddlers on Halloween <br> 
+                    b) consume the top-shelf movies, books, clothes, etc. that always come out in the fall. If you feel the same, here’s a juicy list of fun stuff to read, watch, cook and wear (and I’d love to hear your recs!)…
+
+</span>
+            </h2>
+            <button style="background-color: black; color: white;" onclick="myFunction()" id="myBtn">Read
+                more</button>
+        </div>
+        <div class="right">
+            <img src="Screen-Shot-2022-10-18-at-12.Webp" width="556" height="325">
+            <h4 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 10px;"><br> OCTOBER 18, 2022 - DESIGN - BY JOANNA GODDARD</h4>
+            <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px; display: block; width: 85%;">
+                Four Fun Things
+ <span id="dots2"></span><span
+                    id="more2"> <br>Brooklyn is crushing the Halloween decorations this year. On evening walks, I delight in witch hats and spooky brownstones, and how cute are these outgoing skeletons, above?</span>
+            </h2>
+            <button style="background-color: black; color: white;" onclick="myFunction2()" id="myBtn2">Read
+                more</button>
+        </div>
+    </div>
+
+
+    <div class="read">
+        <a style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;color: black;">You've read yet ?</a>
+
+        <a href="book.html" style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: black; 
+        float: right;
+        ">View All</a>
+        <hr width="100%" align="left" style="color: black;margin-top: 5px" />
+    </div>
+
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="download.jpg" width="333" height="200">
+            </div>
+            <div id="content2">
+                <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;">
+                    It Starts with Us
+                </h2>
+                <p>Before It Ends with Us, it started with Atlas. Colleen Hoover tells fan favorite Atlas's side of the story and shares what comes next in this long-anticipated sequel to the "glorious and touching" (USA TODAY) It Ends with Us.
+                    <br><br><br><br>____ By Colleen Hoover
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="4LJRZKI_Liberation_Day_jpg.jpg" width="333" height="200">
+            </div>
+            <div id="content2">
+                <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;">
+                    Liberation Day: Stories
+                </h2>
+                <p>"Subversive, hilarious, and emotionally piercing: Few writers can encompass that range of adjectives, but Saunders is a true original—restlessly inventive, yet deeply humane." —Jennifer Egan
+                    <br><br><br><br>____ By George Saunders
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="When_We_Were_Sisters.png" width="333" height="200">
+            </div>
+            <div id="content2">
+                <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;">
+                    When We Were Sisters
+                </h2>
+                <p>An orphan grapples with gender, siblinghood, family, and coming-of-age as a Muslim in America in this lyrical debut novel from the acclaimed author of If They Come For Us.
+                    <br><br><br><br><br>____ By Fatimah Asghar
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="51WzCxS9i3L._SL10_UR1600,800_CR200,50,1200,630_CLa_1200,630_51WzCxS9i3L.jpg_0,0,1200,630+82,82,465,465_PJAdblSocialShare-Gradientoverlay-largeasin-0to70,TopLeft,0,0_PJAdblSocialShare-Audib.jpg" width="333" height="200">
+            </div>
+            <div id="content2">
+                <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;">
+                    Please Be Advised
+                </h2>
+                <p>"Cubicle culture has never been targeted more hilariously than in Sneed's exuberant, totally-told-through-memos tale of the rise and fall of Quest Industries. Definitely not business as usual—oh no, it's so much better." —Caroline Leavitt, author of With or Without You
+                    <br><br><br><br>____ Christine Sneed
+                </p>
+            </div>
+        </div>
+        <hr width="100%" align="left" style="color: black;margin-top: 25px;" />
+    </div>
+
+    <div class="more">
+
+        <h1 style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;
+        text-align: center;">
+            More about us
+        </h1>
+        <p style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <br>dolore magna aliqua. Ut enim ad minim venia
+        </p>
+        <button style="background-color: black; color: white; padding: 10px 35px 10px 35px;font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;" type="button" onclick="location.href='about.html'">Learn about us</button>
+
+    </div>
+
+    <div class="final">
+        <div class="final_one">
+            <p style="float: left;font-family: 'Italiana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 75px;
+            ">LIFESTYLE</p>
+            <p style="float: right;font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;margin-top: 30px;margin-right: 20px;">DESIGN A LIFE</p>
+            <hr width="100%" align="left" style="color: black;margin-top: 5px;" />
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="book.html">BOOK</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="final_two">
+            <img src="rear-view-group-school-friends-walking-outdoors-lifestyle_53876-20749.webp" width="558" height="219">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_left"  style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #FFFFFF;">
+        Copyright ©2022 
+        </div>
+        <div class="footer_right">
+            <a href="https://www.facebook.com/vuxnam10"><img style="width: 20%;" src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" /></a>
+            <a href="https://www.instagram.com/_ngxnamm"><img style="width: 28%;" src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" /></a>
+            <a href="https://www.behance.net/vunammnam"><img style="width: 26%;" src="https://cdn.freebiesupply.com/logos/large/2x/behance-1-logo-png-transparent.png" /></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+
+        }
+        function myFunction2() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var btnText = document.getElementById("myBtn2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

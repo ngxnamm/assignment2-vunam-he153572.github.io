@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<style>
+    h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .top_story {
+        margin-left: 160px;
+        margin-right: 200px;
+        margin-top: 40px;
+    }
+
+    #more {
+        display: none;
+    }
+
+    .design {
+        padding: 0 300px 0 300px;
+        text-align: center;
+        font-family: 'Gelasio';
+        font-style: normal;
+    }
+
+
+    .fashion {
+        margin-top: 70px;
+        margin-left: 160px;
+        margin-right: 200px;
+        margin-bottom: 70px;
+    }
+
+    .fashion ul {
+        list-style: none;
+    }
+
+    .fashion ul li {
+        float: left;
+        margin-left: 90px;
+        padding: 0 10px;
+    }
+
+    .fashion ul li a {
+        font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 25px;
+        text-decoration: none;
+        color: black;
+        margin-left: 30px;
+    }
+
+
+    .content {
+        margin-top: 20px;
+        margin-left: 170px;
+        margin-right: 100px;
+    }
+
+    .content .list_content {
+        padding: 5px;
+        display: flex;
+    }
+
+    #content1 {
+        flex-basis: 30%;
+    }
+
+    #content2 {
+        flex-basis: 55%;
+        margin-right: 65px;
+        margin-left: 60px;
+    }
+
+    .more {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .final {
+        margin-top: 150px;
+        margin-left: 160px;
+        margin-right: 200px;
+        margin-bottom: 100px;
+        display: flex;
+    }
+
+    .final .final_one {
+        flex-basis: 50%;
+        margin-right: 30px;
+        margin-top: 15px;
+    }
+
+    .final .final_two {
+        flex-basis: 50%;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        float: left;
+        padding: 0 15px;
+    }
+
+    nav ul li a {
+        font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 25px;
+        text-decoration: none;
+        color: black;
+        margin-left: 30px;
+    }
+
+
+    .footer {
+        background-color: black;
+        padding: 20px;
+        display: flex;
+    }
+
+    .footer .footer_left {
+        flex-basis: 90%;
+        margin-top: 10px;
+    }
+
+    .footer .footer_right {
+        flex-basis: 10%;
+    }
+</style>
+
+
+<body>
+
+    <div class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background: #ffffff;">
+            <div class="container-fluid">
+
+                <a class="nav-link" href="home.html" style="font-family: 'Italiana';
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center; margin-left: 20px;color: black;">Lifestyle</a>
+
+                <div class="collapse navbar-collapse" id="mynavbar" style="margin-left: 350px; text-align: center;">
+                    <ul class="navbar-nav me-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;;color: black;">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form style="border: 1px solid black; margin-top: 15px;">
+                        <input
+                            style="font-family: 'Gelasio';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;padding: 3px 0px 3px 0px ;text-align: center; width: 80px; float: right; margin-right: 30px; border: none;"
+                            type="text" value="Search">
+                        <button type="submit" style="border: none; background-color: white; margin-left: 20px;"><i
+                                class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <hr width="100%" align="left" style="color: black;margin-top: 5px;" />
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="top_story">
+        <h2 style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 81px;margin-bottom: 30px;">
+            About
+        </h2>
+        <hr width="100%" align="left" style="color: black;margin-top: 5px" />
+    </div>
+
+
+    <div class="design">
+        <h1 style="font-weight: 500;
+        font-size: 86px;
+        line-height: 122px;margin-bottom: 30px;">Design a life</h1>
+        <h5 style="font-style: italic;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 41px;margin-bottom: 25px;">Who do you want to be when you grow up?</h5>
+        <p style="font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;margin-bottom: 25px;"> It's a question we get asked all the time as children, and adults
+            always hope we'll get the answer they want
+            right then and there. However, do you find this too absurd?</p>
+        <p style="font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;margin-bottom: 25px;">How can a child know who they really want to be when they don't even
+            know what life really looks like? It's
+            ironic, isn't it?
+        </p>
+        <h5 style="font-style: italic;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 41px;margin-bottom: 25px;">However, the irony doesn't stop there.</h5>
+    </div>
+    <img style="margin-left: 170px;" src="Screenshot-2021-09-09-at-2.03.13-AM-1024x674.png" width="1171" height="600">
+
+
+
+    <div class="fashion">
+        <hr width="100%" align="left" style="color: black;margin-top: 5px" />
+        <h4 style="text-align:center ;font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 34px;">CREATIVE DIRECTOR & FOUNDER</h4>
+
+    </div>
+
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="C67UFiwVwAAS0QD.jpg" width="491" height="491">
+            </div>
+            <div id="content2">
+                <h1 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 81px;">Ng Vu Nam</h1>
+                <p>________________________________________________</p>
+                <p style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;">Shortly after college, Nam moved to New York to pursue a career in digital marketing, despite her parents’ skepticism that people would ever “buy stuff on the internet.” Since then he has helped grow online sales at companies like L’Oreal and Madewell. Before joining Lifestyle, he was driving traffic and maximizing ROI on the performance marketing team at J.Crew. Maureen lives in Seattle with her wife, daughter and cat.</p>
+
+                <div>
+                    <a href="https://www.facebook.com/vuxnam10"><img style="width: 6%;margin-right: 10px;"
+                            src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" /></a>
+                    <a href="https://www.instagram.com/_ngxnamm"><img style="width: 7%;margin-right: 9px;"
+                            src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" /></a>
+                    <a href="https://www.behance.net/vunammnam"><img style="width: 7%;"
+                            src="https://cdn.freebiesupply.com/logos/large/2x/behance-1-logo-png-transparent.png" /></a>
+                </div>
+            </div>
+        </div>
+        <hr width="100%" align="left" style="color: black;margin-top: 50px;" />
+        </div>
+        </div>
+        
+    </div>
+
+
+    
+
+
+
+    <div style="text-align: center;margin: 0 300px 0 300px;">
+        <h3 style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 34px;margin-top: 20px;margin-bottom: 30px;">SUMMARY</h3>
+        <p style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 27px;">
+            Life is a process, not an outcome.
+            <br><br>
+            The question “what do you want to be when you grow up” leads people to believe that at some point in the
+            future we will suddenly stop growing, which leads us to believe that life is an outcome. But of course, life
+            isn't an outcome, it's a process, and neither is growth.
+            <br><br>
+            Billy Burnet and Dave Evans write that “life design is ultimately a new way of living that transforms the
+            way you see life and the way you live your life. The end result of a well-designed life is a life well
+            lived.”
+            <br><br>
+            In other words, when we design our lives, we create our life purpose, give it meaning, and intentionally
+            create the lifestyle we want to lead.
+        </p>
+    </div>
+
+
+    <div class="final">
+        <div class="final_one">
+            <p style="float: left;font-family: 'Italiana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 75px;
+            ">LIFESTYLE</p>
+            <p style="float: right;font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;margin-top: 30px;margin-right: 20px;">DESIGN A LIFE</p>
+            <hr width="100%" align="left" style="color: black;margin-top: 5px;" />
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="book.html">BOOK</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="final_two">
+            <img src="Screenshot-2021-09-09-at-2.03.13-AM-1024x674.png" width="558" height="219">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_left" style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #FFFFFF;">
+            Copyright ©2022
+        </div>
+        <div class="footer_right">
+            <a href="https://www.facebook.com/vuxnam10"><img style="width: 20%;"
+                    src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" /></a>
+            <a href="https://www.instagram.com/_ngxnamm"><img style="width: 28%;"
+                    src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" /></a>
+            <a href="https://www.behance.net/vunammnam"><img style="width: 26%;"
+                    src="https://cdn.freebiesupply.com/logos/large/2x/behance-1-logo-png-transparent.png" /></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

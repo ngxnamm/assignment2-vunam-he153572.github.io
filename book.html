@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<style>
+    h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .top_story {
+        margin-left: 160px;
+        margin-right: 200px;
+        margin-top: 40px;
+    }
+
+    #more {
+        display: none;
+    }
+
+    .read {
+        display: flex;
+        margin-left: 12%;
+        margin-right: 10%;
+        padding-top: 2%;
+    }
+
+    .read .one {
+        flex-basis: 25%;
+    }
+
+    .read .two {
+        flex-basis: 25%;
+    }
+    .read .three {
+        flex-basis: 25%;
+    }
+    .read .four {
+        flex-basis: 25%;
+    }
+
+    .fashion{
+        margin-top: 70px;
+        margin-left: 160px;
+        margin-right: 200px;
+        margin-bottom: 70px;
+    }
+     .fashion ul {
+        list-style: none;
+    }
+
+     .fashion ul li {
+        float: left;
+        margin-left: 90px;
+        padding: 0 10px ;
+    }
+
+     .fashion ul li a {
+        font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 25px;
+        text-decoration: none;
+        color: black;
+        margin-left: 30px;
+    }
+
+
+    .content {
+        margin-top: 20px;
+        margin-left: 200px;
+        margin-right: 100px;
+    }
+
+    .content .list_content {
+        padding: 5px;
+        display: flex;
+    }
+
+    #content1 {
+        flex-basis: 30%;
+        margin-top: 12px;
+    }
+
+    #content2 {
+        flex-basis: 60%;
+        margin-right: 30px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .more {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .final {
+        margin-top: 150px;
+        margin-left: 160px;
+        margin-right: 200px;
+        margin-bottom: 100px;
+        display: flex;
+    }
+
+    .final .final_one {
+        flex-basis: 50%;
+        margin-right: 30px;
+        margin-top: 15px;
+    }
+
+    .final .final_two {
+        flex-basis: 50%;
+    }
+
+    nav .menu ul {
+        list-style: none;
+    }
+
+    nav .menu ul li {
+        float: left;
+        padding: 0 15px;
+    }
+
+    nav .menu ul li a {
+        font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 25px;
+        text-decoration: none;
+        color: black;
+        margin-left: 30px;
+    }
+
+    .footer {
+        background-color: black;
+        padding: 20px;
+        display: flex;
+    }
+
+    .footer .footer_left {
+        flex-basis: 90%;
+        margin-top: 10px;
+    }
+    .footer .footer_right {
+        flex-basis: 10%;
+    }
+</style>
+
+
+<body>
+
+    <div class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background: #ffffff;">
+            <div class="container-fluid">
+
+                <a class="nav-link" href="home.html" style="font-family: 'Italiana';
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center; margin-left: 20px;color: black;">Lifestyle</a>
+
+                <div class="collapse navbar-collapse" id="mynavbar" style="margin-left: 350px; text-align: center;">
+                    <ul class="navbar-nav me-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;;color: black;">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="padding-top: 27px;margin-left: 40px;font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 29px;
+              text-align: center;;color: black;">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form style="border: 1px solid black; margin-top: 15px;">
+                        <input style="font-family: 'Gelasio';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;padding: 3px 0px 3px 0px ;text-align: center; width: 80px; float: right; margin-right: 30px; border: none;"  type="text" value="Search"> 
+                        <button type="submit" style="border: none; background-color: white; margin-left: 20px;"><i class="fa fa-search"></i></button>
+                      </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <hr width="100%" align="left" style="color: black;margin-top: 5px;" />
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="top_story">
+        <h2 style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 81px;margin-bottom: 30px;">
+            Books
+        </h2>
+        <a style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;color: black;">You should read</a>
+
+    
+        <hr width="100%" align="left" style="color: black;margin-top: 5px" />
+    </div>
+
+
+    <div class="read">
+        <div class="one">
+            <img src="9781523523184.webp" width="227" height="325">
+            <h2 style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;">
+                Ejaculate Responsibly: A Whole New Way to Think about Abortion
+            </h2>
+            <p>By Gabrielle Stanley Blair </p>
+            <button style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 25px;
+            padding: 2px 20px 2px 20px; background-color: black; color: white;">Buy</button>
+        </div>
+
+        <div class="two">
+            <img src="9781324035473.webp" width="227" height="325">
+            <h2 style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;">
+                
+Poetry Unbound: 50 <br> Poems to Open Your <br> World
+            </h2>
+            <p>By Pádraig Ó. Tuama (Author)</p>
+            <button style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 25px;
+            padding: 2px 20px 2px 20px; background-color: black; color: white;">Buy</button>
+        </div>
+
+        <div class="three">
+            <img src="9780593318997.webp" width="227" height="325">
+            <h2 style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;">
+                The Persuaders: At the <br> Front Lines of the Fight <br> for Hearts
+            </h2>
+            <p>  By Anand Giridharadas (Author)</p>
+            <button style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 25px;
+            padding: 2px 20px 2px 20px; background-color: black; color: white;">Buy</button>
+        </div>
+
+        <div class="four">
+            <img src="9781324064824.webp" width="227" height="325">
+            <h2 style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;">
+                The Seven Moons <br> of <br> Maali Almeida
+            </h2>
+            <p> By Shehan Karunatilaka (Author)</p>
+            <button style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 25px;
+            padding: 2px 20px 2px 20px; background-color: black; color: white;">Buy</button>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+    <div class="fashion">
+        <hr width="100%" align="left" style="color: black;margin-top: 5px" />
+        <ul class="list_fashion">
+            <li><a href="#" style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;">Stories</a></li>
+            <li><a href="#">Psychology</a></li>
+            <li><a href="#">Literature</a></li>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Novels</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="9780062975829.webp" width="227" height="325">
+            </div>
+            <div id="content2">
+                <h4 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 12px;
+                "><br>Novel</h4>
+                <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;">
+                    The Upstairs House
+                </h2>
+                <p>Winner of the Chicago Review of Books Fiction Award
+
+A Good Morning America Book of the Month Selection - A Popsugar Must-Read Book of the Month - A Buzzfeed Most Anticipated Book of the Year - A The Millions Most Anticipated Book of the Year
+
+"Provocative.... [An] assured, beautifully written book." --Sarah Lyall, New York Times
+
+In this provocative meditation on new motherhood--Shirley Jackson meets The Awakening--a postpartum woman's psychological unraveling becomes intertwined with the ghostly appearance of children's book writer Margaret Wise Brown.
+                </p><br> <br>
+                <button style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 25px;
+            padding: 2px 20px 2px 20px; background-color: black; color: white;">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="9780316537247.jpg" width="227" height="325">
+            </div>
+            <div id="content2">
+                <h4 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 12px;
+                "><br>Novel</h4>
+                <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;">
+                    Horrid
+
+                </h2>
+                <p>From the author of You Must Not Miss comes a haunting contemporary horror novel that explores themes of mental illness, rage, and grief, twisted with spine-chilling elements of Stephen King and Agatha Christie.
+                </p> <br><br><br><br><br>
+                <button style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 25px;
+            padding: 2px 20px 2px 20px; background-color: black; color: white;">Buy</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="9781555977887 (1).jpg" width="227" height="325">
+            </div>
+            <div id="content2">
+                <h4 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 12px;
+                "><br>Novel</h4>
+                <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;">
+                   Her Body and Other Parties: Stories
+
+                </h2>
+                <p>"[These stories] vibrate with originality, queerness, sensuality and the strange."--Roxane Gay
+
+"In these formally brilliant and emotionally charged tales, Machado gives literal shape to women's memories and hunger and desire. I couldn't put it down."--Karen Russell
+                </p> <br><br><br><br><br>
+                <button style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 25px;
+            padding: 2px 20px 2px 20px; background-color: black; color: white;">Buy</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="list_content">
+            <div id="content1">
+                <img src="9781982136468.webp" width="227" height="325">
+            </div>
+            <div id="content2">
+                <h4 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 12px;
+                "><br>Novel</h4>
+                <h2 style="font-family: 'Gelasio';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;">
+                    The Only Good Indians
+                </h2>
+                <p>A NEW YORK TIMES BESTSELLER From USA TODAY bestselling author Stephen Graham Jones comes a "masterpiece" (Locus Magazine) of a novel about revenge, cultural identity, and the cost of breaking from tradition. Labeled "one of 2020's buzziest horror novels" (Entertainment Weekly), this is a remarkable horror story that "will give you nightmares--the good kind of course" (BuzzFeed).
+                </p> <br><br><br><br>
+                <button style="font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 25px;
+            padding: 2px 20px 2px 20px; background-color: black; color: white;">Buy</button>
+            </div>
+        </div>
+    </div>
+        </div>
+        <hr width="100%" align="left" style="color: black;margin-top: 25px;" />
+    </div>
+
+    <div class="more">
+        <button style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center; padding: 5px 30px 5px 30px;">MORE</button>
+    </div>
+
+    <div class="final">
+        <div class="final_one">
+            <p style="float: left;font-family: 'Italiana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 75px;
+            ">LIFESTYLE</p>
+            <p style="float: right;font-family: 'Gelasio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;margin-top: 30px;margin-right: 20px;">DESIGN A LIFE</p>
+            <hr width="100%" align="left" style="color: black;margin-top: 5px;" />
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="book.html">BOOK</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="final_two">
+            <img src="rear-view-group-school-friends-walking-outdoors-lifestyle_53876-20749.webp" width="558" height="219">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_left"  style="font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #FFFFFF;">
+        Copyright ©2022 
+        </div>
+        <div class="footer_right">
+            <a href="https://www.facebook.com/vuxnam10"><img style="width: 20%;" src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" /></a>
+            <a href="https://www.instagram.com/_ngxnamm"><img style="width: 28%;" src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" /></a>
+            <a href="https://www.behance.net/vunammnam"><img style="width: 26%;" src="https://cdn.freebiesupply.com/logos/large/2x/behance-1-logo-png-transparent.png" /></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+</body>
+
+</html>
